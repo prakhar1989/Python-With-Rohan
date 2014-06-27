@@ -21,7 +21,6 @@
       background: red;
       color: white;
     }
-
 	img {
 		height: 150px;
 		border: 1px solid white;
@@ -30,17 +29,25 @@
 	div.main {
 		margin: 140px auto;
 		width: 600px;
+		min-height: 300px;
 		padding: 40px 0;
 		background: rgba(0, 0, 0, 0.5);
 	}
-
+	p#msg {
+		display: none;
+	}
   </style>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="main">
 	  <img src="/assets/prakhar.jpeg">
 	  <p>Hi! I'm Prakhar, a Programmer from Kuwait. Say hello!</p>
-	  <input type="email" placeholder="Your email">
-	  <input type="submit">
+	  <form> 
+		  <input type="email" placeholder="Your email">
+		  <input type="submit">
+	  </form>
+	  <p id="msg">Thanks for your message!</p>
 	</div>
+	<script type="text/javascript" src="/assets/app.js"></script>
 </body>
